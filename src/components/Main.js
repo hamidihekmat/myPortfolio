@@ -19,14 +19,14 @@ function Main() {
 const MainContainer = styled(Container)`
   height: 90vh;
   h1 {
-    margin-top: 4.5rem 0px;
+    margin-top: 4rem 0px;
     letter-spacing: 4px;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 1122px) {
     h1 {
       font-size: 1.8rem;
-      margin-bottom: 10px;
       letter-spacing: 0;
     }
     h3 {
