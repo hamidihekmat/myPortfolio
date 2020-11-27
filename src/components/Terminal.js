@@ -16,9 +16,8 @@ function Terminal() {
         <div className="info">
           <p>&gt; Hekmat.contactInfo</p>
           <p>
-            [<Highlight>hamidihekmat@gmail.com</Highlight>
-            <Highlight>linkedIn</Highlight>
-            <Highlight>github</Highlight>]
+            [<Highlight>"hamidihekmat@gmail.com"</Highlight>,
+            <Highlight>"linkedIn"</Highlight>,<Highlight>"github"</Highlight>]
           </p>
         </div>
         <div className="info">
