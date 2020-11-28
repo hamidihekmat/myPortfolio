@@ -58,7 +58,6 @@ const StyledTerminal = styled.div`
   -webkit-box-shadow: 10px 10px 40px
     ${(props) => (props.darkMode ? '#222831' : 'white')};
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: box-shadow 500ms ease;
 `;
 
 const TopBar = styled.div`

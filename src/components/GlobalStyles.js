@@ -12,6 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         background: ${(props) => (props.darkMode ? '#222831' : 'white')};
         color: ${(props) => (props.darkMode ? '#ffff' : '#374151')};
+        transition: all 500ms ease;
     }
 
     h1 {
