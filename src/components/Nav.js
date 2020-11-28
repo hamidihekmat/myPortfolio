@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-function Nav() {
+function Nav({ darkMode }) {
   return (
     <StyledNav>
-      <Logo>hamidihekmat@gmail.com</Logo>
+      <Logo darkMode={darkMode}>hamidihekmat@gmail.com</Logo>
       <ul>
         <li>
           <h3>Projects</h3>
@@ -38,7 +38,7 @@ const StyledNav = styled.nav`
 
 const Logo = styled.h3`
   font-family: 'Pacifico', cursive;
-  color: #d8d7da;
+  color: ${(props) => (props.darkMode ? '#d8d7da' : '#374151k')};
 `;
 
 export default Nav;

@@ -10,8 +10,8 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: 'Open Sans', sans-serif;
-        background: #222831;
-        color: #ffffff;
+        background: ${(props) => (props.darkMode ? '#222831' : 'white')};
+        color: ${(props) => (props.darkMode ? '#ffff' : '#374151')};
     }
 
     h1 {
@@ -31,9 +31,10 @@ export const GlobalStyles = createGlobalStyle`
         nav {
             flex-direction: column;
             h3 {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
+        
 
     }
 `;

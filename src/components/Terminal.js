@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-function Terminal() {
+function Terminal({ darkMode }) {
   return (
-    <StyledTerminal>
+    <StyledTerminal darkMode={darkMode}>
       <TopBar>
         <span className="red" />
         <span className="yellow" />
@@ -51,19 +51,22 @@ const StyledTerminal = styled.div`
   background: #5a5d7a;
   width: 100%;
   min-height: 500px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  -moz-box-shadow: 10px 10px 40px #15181d;
-  -webkit-box-shadow: 10px 10px 40px #15181d;
-  box-shadow: 10px 10px 40px #15181d;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  -moz-box-shadow: 10px 10px 40px
+    ${(props) => (props.darkMode ? '#222831' : 'white')};
+  -webkit-box-shadow: 10px 10px 40px
+    ${(props) => (props.darkMode ? '#222831' : 'white')};
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: box-shadow 500ms ease;
 `;
 
 const TopBar = styled.div`
   background: #d8d7da;
   height: 2.3rem;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
   display: flex;
   align-items: center;
   span {
@@ -85,6 +88,7 @@ const TopBar = styled.div`
 `;
 
 const Infos = styled.div`
+  color: #d8d7da;
   padding: 0rem 1.5rem;
   .info {
     padding: 1rem 0rem;

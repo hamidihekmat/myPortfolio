@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Container } from '../styles';
 import Terminal from './Terminal';
 
-function Main() {
+function Main({ darkMode }) {
   return (
     <MainContainer>
       <h1>&gt; Hekmat Hamidi</h1>
@@ -11,7 +11,7 @@ function Main() {
         <br />
         web applications
       </h3>
-      <Terminal />
+      <Terminal darkMode={darkMode} />
     </MainContainer>
   );
 }
