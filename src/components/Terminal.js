@@ -1,43 +1,43 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 function Terminal({ darkMode }) {
   return (
     <StyledTerminal darkMode={darkMode}>
       <TopBar>
-        <span className="red" />
-        <span className="yellow" />
-        <span className="green" />
+        <span className='red' />
+        <span className='yellow' />
+        <span className='green' />
       </TopBar>
       <Infos>
-        <div className="info">
+        <div className='info'>
           <p>&gt; Hekmat.currentLocation</p>
-          <p className="info-ans">"Richmond Hill, ON"</p>
+          <p className='info-ans'>"Richmond Hill, ON"</p>
         </div>
-        <div className="info">
+        <div className='info'>
           <p>&gt; Hekmat.contactInfo</p>
           <p>
             [<Highlight>"hamidihekmat@gmail.com"</Highlight>,
             <Highlight>"linkedIn"</Highlight>,<Highlight>"github"</Highlight>]
           </p>
         </div>
-        <div className="info">
+        <div className='info'>
           <p>&gt; Hekmat.resume</p>
           <Highlight>"hamidihekmat@gmail.com</Highlight>
         </div>
-        <div className="info">
+        <div className='info'>
           <p>&gt; Hekmat.interests</p>
-          <p className="info-ans">
+          <p className='info-ans'>
             ["working out 💪", "watching movies 🍿", "coding 👨‍💻"]
           </p>
         </div>
-        <div className="info">
+        <div className='info'>
           <p>&gt; Hekmat.skills</p>
-          <p className="info-ans">
+          <p className='info-ans'>
             ["javascipt", "python", "c++", "mySQL", "mongoDB", "React", "git",
             "Sass", "Node", "Styled Components"]
           </p>
         </div>
-        <div className="info">
+        <div className='info'>
           <p>&gt;</p>
         </div>
       </Infos>
@@ -46,31 +46,31 @@ function Terminal({ darkMode }) {
 }
 
 const StyledTerminal = styled.div`
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   overflow: hidden;
   background: #5a5d7a;
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
   border-top-left-radius: 11px;
   border-top-right-radius: 11px;
   -moz-box-shadow: 10px 10px 40px
-    ${(props) => (props.darkMode ? '#222831' : 'white')};
+    ${(props) => (props.darkMode ? "#222831" : "white")};
   -webkit-box-shadow: 10px 10px 40px
-    ${(props) => (props.darkMode ? '#222831' : 'white')};
+    ${(props) => (props.darkMode ? "#222831" : "white")};
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
 const TopBar = styled.div`
   background: #d8d7da;
-  height: 2.3rem;
+  height: 2rem;
   width: 100%;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   display: flex;
   align-items: center;
   span {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     display: block;
     margin: 3px 5px;
@@ -90,7 +90,7 @@ const Infos = styled.div`
   color: #d8d7da;
   padding: 0rem 1.5rem;
   .info {
-    padding: 1rem 0rem;
+    padding: 0.5rem 0rem;
   }
   .info > p {
     margin: 2px 0px;

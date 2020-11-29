@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -10,21 +10,21 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: 'Open Sans', sans-serif;
-        background: ${(props) => (props.darkMode ? '#222831' : 'white')};
-        color: ${(props) => (props.darkMode ? '#ffff' : '#374151')};
+        background: ${(props) => (props.darkMode ? "#222831" : "white")};
+        color: ${(props) => (props.darkMode ? "#ffff" : "#374151")};
         transition: all 500ms ease;
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3.3rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     h3, h4 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 400;
     }
 

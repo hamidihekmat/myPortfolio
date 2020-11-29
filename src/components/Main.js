@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Container } from '../styles';
-import Terminal from './Terminal';
+import styled from "styled-components";
+import { Container } from "../styles";
+import Terminal from "./Terminal";
 
 function Main({ darkMode }) {
   return (
@@ -17,7 +17,7 @@ function Main({ darkMode }) {
 }
 
 const MainContainer = styled(Container)`
-  height: 90vh;
+  min-height: 90vh;
   h1 {
     margin-top: 4rem 0px;
     letter-spacing: 4px;
