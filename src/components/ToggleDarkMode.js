@@ -36,7 +36,7 @@ const Button = styled(motion.div)`
   cursor: pointer;
   border-radius: 50%;
   color: white;
-  padding: 0.6rem 0.6rem;
+  padding: 0.4rem 0.4rem;
   bottom: 7vh;
   right: 7vw;
   opacity: 0.8;

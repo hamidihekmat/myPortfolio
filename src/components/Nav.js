@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 function Nav({ darkMode }) {
   return (
@@ -21,8 +21,9 @@ function Nav({ darkMode }) {
 
 const StyledNav = styled.nav`
   min-height: 10vh;
+  max-width: 1100px;
   width: 70%;
-  margin: 0px auto;
+  margin: 0.5rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,8 +38,8 @@ const StyledNav = styled.nav`
 `;
 
 const Logo = styled.h3`
-  font-family: "Pacifico", cursive;
-  color: ${(props) => (props.darkMode ? "#d8d7da" : "#374151k")};
+  font-family: 'Pacifico', cursive;
+  color: ${(props) => (props.darkMode ? '#d8d7da' : '#374151k')};
 `;
 
 export default Nav;
