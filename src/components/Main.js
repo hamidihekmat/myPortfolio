@@ -18,7 +18,7 @@ function Main({ darkMode }) {
 
 const MainContainer = styled(Container)`
   h1 {
-    margin-top: 1rem;
+    margin-top: 2rem;
     letter-spacing: 4px;
     margin-bottom: 10px;
   }

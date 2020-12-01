@@ -24,7 +24,7 @@ function Project({ project }) {
             Live
           </a>
           <a target={'_blank'} rel="noreferrer" href={project.github}>
-            Github
+            {project.github ? 'Github' : 'Private'}
           </a>
         </div>
       </div>
@@ -38,6 +38,7 @@ const StyledProject = styled.div`
   display: flex;
   width: 100%;
   height: 360px;
+  border-radius: 15px;
   -moz-box-shadow: 10px 10px 40px
     ${(props) => (props.darkMode ? '#222831' : 'white')};
   -webkit-box-shadow: 10px 10px 40px
