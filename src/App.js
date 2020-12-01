@@ -1,11 +1,11 @@
-import { GlobalStyles } from './components/GlobalStyles';
-import Main from './components/Main';
-import Nav from './components/Nav';
-import { useState, useRef } from 'react';
-import ToggleDarkMode from './components/ToggleDarkMode';
-import Projects from './components/Projects';
-import Contacts from './components/Contacts';
-import { useEffect } from 'react';
+import { GlobalStyles } from "./components/GlobalStyles";
+import Main from "./components/Main";
+import Nav from "./components/Nav";
+import { useState, useRef } from "react";
+import ToggleDarkMode from "./components/ToggleDarkMode";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
+import { useEffect } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,13 +13,13 @@ function App() {
   const projectRef = useRef(null);
   const contactRef = useRef(null);
   useEffect(() => {
-    const localDarkMode = JSON.parse(
-      localStorage.getItem('darkMode').toLowerCase()
-    );
-    setDarkMode(localDarkMode);
+    const localDarkMode = localStorage.getItem("darkMode");
+    if (localDarkMode) {
+      setDarkMode(JSON.parse(localDarkMode.toLowerCase()));
+    }
   }, []);
   return (
-    <div className="App" ref={constraintsRef}>
+    <div className='App' ref={constraintsRef}>
       <GlobalStyles darkMode={darkMode} />
       <Nav
         projectRef={projectRef}
