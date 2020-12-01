@@ -7,9 +7,14 @@ function Nav({ darkMode, projectRef, contactRef }) {
   const scrollToContact = () => {
     contactRef.current.scrollIntoView();
   };
+  const openEmail = () => {
+    window.open('mailto:hamidihekmat@gmail.com');
+  };
   return (
     <StyledNav>
-      <Logo darkMode={darkMode}>hamidihekmat@gmail.com</Logo>
+      <Logo onClick={openEmail} darkMode={darkMode}>
+        hamidihekmat@gmail.com
+      </Logo>
       <ul>
         <li onClick={scrollToProject}>
           <h3>Projects</h3>
@@ -46,6 +51,7 @@ const StyledNav = styled.nav`
 const Logo = styled.h3`
   font-family: 'Pacifico', cursive;
   color: ${(props) => (props.darkMode ? '#d8d7da' : '#374151k')};
+  cursor: pointer;
 `;
 
 export default Nav;

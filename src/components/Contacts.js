@@ -9,9 +9,25 @@ function Contacts({ contactRef }) {
     <ContactContainer ref={contactRef}>
       <h3 onClick={openEmail}>hamidihekmat@gmail.com</h3>
       <h3>.</h3>
-      <h3>Github</h3>
+      <h3>
+        <a
+          target={'_blank'}
+          rel="noreferrer"
+          href="https://github.com/hamidihekmat"
+        >
+          Github
+        </a>
+      </h3>
       <h3>.</h3>
-      <h3>LinkedIn</h3>
+      <h3>
+        <a
+          target={'_blank'}
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/hekmat-hamidi-53040518a/"
+        >
+          LinkedIn
+        </a>
+      </h3>
     </ContactContainer>
   );
 }
@@ -22,6 +38,10 @@ const ContactContainer = styled(Container)`
   height: 10vh;
   width: 50%;
   padding: 1rem 2rem;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   h3 {
     font-family: 'Pacifico';
     margin: 0 0.5rem;
