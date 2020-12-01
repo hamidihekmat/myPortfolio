@@ -74,7 +74,7 @@ export const projectDetails = [
     name: 'Elegant Shop',
     image: 'https://i.imgur.com/mv7CW3U.png',
     description:
-      'Elegant Shop is your number one source for all things and products. Dedicated to providing you the very best of products, with an emphasis on elegant design, cheap and beautiful.',
+      'Elegant Shop is your number one source for all things and products. Dedicated to providing you the very best of products, with an emphasis on elegant design, cheap and beautiful. In this project I learned to manipulate the DOM with JS.',
     tools: [tools.html, tools.css, tools.js],
     github: 'https://github.com/hamidihekmat/elegantshop',
     live: 'https://elegantshop.netlify.app/',

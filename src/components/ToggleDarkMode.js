@@ -12,8 +12,10 @@ function ToggleDarkMode({ darkMode, setDarkMode, constraintsRef }) {
   const handleToggle = () => {
     if (darkMode) {
       playSwitchOn();
+      localStorage.setItem('darkMode', 'false');
     } else {
       playSwitchOff();
+      localStorage.setItem('darkMode', 'true');
     }
     setDarkMode(!darkMode);
   };

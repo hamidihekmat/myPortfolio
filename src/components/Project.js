@@ -60,7 +60,7 @@ const StyledProject = styled.div`
     overflow: hidden;
     width: 50%;
     img {
-      filter: brightness(0.8);
+      filter: brightness(0.9);
     }
   }
   .project-content {
@@ -78,7 +78,7 @@ const StyledProject = styled.div`
     }
   }
   @media (max-width: 900px) {
-    height: 300px;
+    height: 320px;
     .project-image {
       display: none;
     }
@@ -87,7 +87,7 @@ const StyledProject = styled.div`
     }
   }
   @media (max-width: 660px) {
-    height: 430px;
+    height: 440px;
   }
 `;
 
@@ -95,7 +95,7 @@ const Tool = styled.span`
   display: block;
   border: 1px solid #d8d7da;
   padding: 0.3rem 0.5rem;
-  margin: 1rem 5px;
+  margin: 1.5rem 5px;
 `;
 
 export default Project;
