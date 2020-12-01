@@ -61,7 +61,7 @@ const StyledTerminal = styled.div`
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 `;
 
-const TopBar = styled.div`\
+const TopBar = styled.div`
   position: absolute;
   background: #d8d7da;
   height: 2rem;

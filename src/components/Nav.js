@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
-function Nav({ darkMode }) {
+function Nav({ darkMode, projectRef }) {
+  const scrollToProject = () => {
+    projectRef.current.scrollIntoView();
+  };
   return (
     <StyledNav>
       <Logo darkMode={darkMode}>hamidihekmat@gmail.com</Logo>
       <ul>
         <li>
-          <h3>Projects</h3>
+          <h3 onClick={scrollToProject}>Projects</h3>
         </li>
         <li>
           <h3>Resume</h3>

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -7,11 +7,14 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    html {
+        scroll-behavior: smooth;
+    }
 
     body {
         font-family: 'Open Sans', sans-serif;
-        background: ${(props) => (props.darkMode ? "#222831" : "white")};
-        color: ${(props) => (props.darkMode ? "#ffff" : "#374151")};
+        background: ${(props) => (props.darkMode ? '#222831' : 'white')};
+        color: ${(props) => (props.darkMode ? '#ffff' : '#374151')};
         transition: all 500ms ease;
     }
 
@@ -26,6 +29,12 @@ export const GlobalStyles = createGlobalStyle`
     h3, h4 {
         font-size: 1.3rem;
         font-weight: 400;
+    }
+
+    img {
+        width:100%;
+        height:100%;
+        object-fit: cover;
     }
 
     @media screen and (max-width: 1122px) {
