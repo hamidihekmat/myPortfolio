@@ -86,7 +86,7 @@ const StyledProject = styled.div`
     }
   }
   @media (max-width: 660px) {
-    height: 420px;
+    height: 430px;
   }
 `;
 
