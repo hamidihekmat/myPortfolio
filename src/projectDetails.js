@@ -29,7 +29,7 @@ const tools = {
   },
   mysql: {
     id: 8,
-    name: 'MySQL',
+    name: 'SQL',
   },
   ffmpeg: {
     id: 9,
