@@ -35,9 +35,32 @@ const tools = {
     id: 9,
     name: 'ffmpeg',
   },
+  graphql: {
+    id: 10,
+    name: 'Graphql',
+  },
+  apollo: {
+    id: 11,
+    name: 'Apollo',
+  },
+  next: {
+    id: 12,
+    name: 'Nextjs',
+  },
 };
 
 export const projectDetails = [
+  {
+    id: '1n',
+    name: 'Airbnb Clone',
+    image: 'https://i.imgur.com/GJeMg8f.png',
+    description:
+      'Airbnb clone created with Nextjs & GraphQL. This clone also uses JWT tokens for authenticating users. Users can view listings and also create a new listing. Images are optimazed for browsers and mobile view. In this project I learned authentication, graphql and how to integrate apollo client with Nextjs.',
+    tools: [tools.next, tools.apollo, tools.css],
+    github: 'https://github.com/hamidihekmat/next-airbnb',
+    live: 'https://next-airbnb.vercel.app',
+  },
+
   {
     id: 1,
     name: 'React Player',
