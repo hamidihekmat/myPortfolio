@@ -10,6 +10,12 @@ function Nav({ darkMode, projectRef, contactRef }) {
   const openEmail = () => {
     window.open('mailto:hamidihekmat@gmail.com');
   };
+  const downloadResume = () => {
+    window.open(
+      'https://raw.githubusercontent.com/hamidihekmat/myPortfolio/main/resume.pdf',
+      '_blank'
+    );
+  };
   return (
     <StyledNav>
       <Logo onClick={openEmail} darkMode={darkMode}>
@@ -20,7 +26,7 @@ function Nav({ darkMode, projectRef, contactRef }) {
           <h3>Projects</h3>
         </li>
         <li>
-          <h3>Resume</h3>
+          <h3 onClick={downloadResume}>Resume</h3>
         </li>
         <li onClick={scrollToContact}>
           <h3>Contacts</h3>
