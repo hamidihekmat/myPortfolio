@@ -56,7 +56,7 @@ export const projectDetails = [
     image: 'https://i.imgur.com/GJeMg8f.png',
     description:
       'Airbnb clone created with Nextjs & GraphQL. This clone also uses JWT tokens for authenticating users. Users can view listings and also create a new listing. Images are optimazed for browsers and mobile view. In this project I learned authentication, graphql and how to integrate apollo client with Nextjs.',
-    tools: [tools.next, tools.apollo, tools.css],
+    tools: [tools.next, tools.graphql, tools.apollo, tools.css],
     github: 'https://github.com/hamidihekmat/next-airbnb',
     live: 'https://next-airbnb.vercel.app',
   },
