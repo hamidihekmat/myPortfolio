@@ -34,7 +34,7 @@ function Terminal({ darkMode }) {
           <p>&gt; Hekmat.skills</p>
           <p className="info-ans">
             ["javascipt", "python", "c++", "mySQL", "mongoDB", "React", "git",
-            "Sass", "Node", "Styled Components"]
+            "Sass", "Node", "Graphql", "Styled Components"]
           </p>
         </div>
         <div className="info">
