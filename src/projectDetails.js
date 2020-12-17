@@ -55,8 +55,8 @@ export const projectDetails = [
     name: 'Airbnb Clone',
     image: 'https://i.imgur.com/GJeMg8f.png',
     description:
-      'Airbnb clone created with Nextjs & GraphQL. This clone also uses JWT tokens for authenticating users. Users can view listings and also create a new listing. Images are optimazed for browsers and mobile view. In this project I learned authentication, graphql and how to integrate apollo client with Nextjs.',
-    tools: [tools.next, tools.graphql, tools.apollo, tools.css],
+      'Airbnb clone created with Nextjs & GraphQL. Uses JWT tokens for authenticating users. Users can view listings and also create a new listing. Images are optimized for browsers and mobile. In this project I learned authentication, graphql and how to integrate apollo client with Nextjs.',
+    tools: [tools.next, tools.graphql, tools.apollo],
     github: 'https://github.com/hamidihekmat/next-airbnb',
     live: 'https://next-airbnb.vercel.app',
   },
@@ -66,7 +66,7 @@ export const projectDetails = [
     name: 'React Player',
     image: 'https://i.imgur.com/FVcd53k.png',
     description:
-      'React Player is a beautiful music player which uses data from Chillhop.com to deliver calm lofi music. In this project I learned to combine Sass to dynamically update css using react state. This project is also mobile friendly.',
+      'React Player is a beautiful music player, which uses data from Chillhop.com to deliver calm lofi music. In this project I learned to combine Sass to dynamically update css. This project is also mobile friendly.',
     tools: [tools.react, tools.recoil, tools.css],
     github: 'https://github.com/hamidihekmat/React-Player',
     live: 'https://react-player-tau.vercel.app/',
@@ -76,7 +76,7 @@ export const projectDetails = [
     name: 'Portfolio',
     image: 'https://i.imgur.com/HBCXLSj.png',
     description:
-      'My Portfolio! This was built with React. It was built with responsiveness in mind. It also has a dark mode option! An easter egg awaits you. ',
+      'My Portfolio! This was created with React. It was built with responsiveness in mind. It also has a dark mode option.',
     tools: [tools.react, tools.css, tools.framer],
     github: 'https://github.com/hamidihekmat/myPortfolio',
     live: '',
@@ -87,7 +87,7 @@ export const projectDetails = [
     image:
       'https://c.files.bbci.co.uk/076D/production/_114310910_tiktok-logo.jpg',
     description:
-      'A bot created with python & ffmpeg to get trending tiktok videos from private api, compile the videos, and upload it to youtube. The bot does everything from creating the title to generating the thumbnail. Contact me for code.',
+      'A bot created with python & ffmpeg to gets trending tiktok videos from private api, compiles the videos, and uploads it to youtube. The bot does everything from creating the title to generating the thumbnail. Contact me for code.',
     tools: [tools.python, tools.mysql, tools.ffmpeg],
     live: 'https://www.youtube.com/channel/UCCS5kHZWDoEitXB3IPoKS3A/videos',
     github: '',
