@@ -51,7 +51,7 @@ const tools = {
 
 export const projectDetails = [
   {
-    id: '1n',
+    id: '1',
     name: 'Airbnb Clone',
     image: 'https://i.imgur.com/GJeMg8f.png',
     description:
@@ -59,17 +59,6 @@ export const projectDetails = [
     tools: [tools.next, tools.graphql, tools.apollo],
     github: 'https://github.com/hamidihekmat/next-airbnb',
     live: 'https://next-airbnb.vercel.app',
-  },
-
-  {
-    id: 1,
-    name: 'React Player',
-    image: 'https://i.imgur.com/FVcd53k.png',
-    description:
-      'React Player is a beautiful music player, which uses data from Chillhop.com to deliver calm lofi music. In this project I learned to combine Sass to dynamically update css. This project is also mobile friendly.',
-    tools: [tools.react, tools.recoil, tools.css],
-    github: 'https://github.com/hamidihekmat/React-Player',
-    live: 'https://react-player-tau.vercel.app/',
   },
   {
     id: 2,
