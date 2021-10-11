@@ -107,7 +107,7 @@ const StyledProject = styled.div`
 
 const Tool = styled.span`
   display: block;
-  border: 2px solid ${(props) => (props.darkMode ? 'white' : 'black')};
+  border: 1px solid ${(props) => (props.darkMode ? 'white' : 'black')};
   color: ${(props) => (props.darkMode ? 'white' : 'black')};
   background: ${(props) => (props.darkMode ? 'black' : 'white')};
   padding: 0.3rem 0.5rem;
