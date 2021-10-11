@@ -8,7 +8,7 @@ function Contacts({ contactRef }) {
   };
   return (
     <ContactContainer ref={contactRef}>
-      <h3 onClick={openEmail}>hamidihekmat@gmail.com</h3>
+      <h3 onClick={openEmail}>.email()</h3>
       <AiOutlineMail size="1.2em" />
       <h3>.</h3>
       <h3>
@@ -17,7 +17,7 @@ function Contacts({ contactRef }) {
           rel="noreferrer"
           href="https://github.com/hamidihekmat"
         >
-          Github
+          .github()
         </a>
       </h3>
       <AiFillGithub size="1.2em" />
@@ -28,7 +28,7 @@ function Contacts({ contactRef }) {
           rel="noreferrer"
           href="https://www.linkedin.com/in/hekmat-hamidi-53040518a/"
         >
-          LinkedIn
+          .linkedIn()
         </a>
       </h3>
       <AiFillLinkedin size="1.2em" />
