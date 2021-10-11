@@ -31,7 +31,7 @@ function Contacts({ contactRef }) {
           LinkedIn
         </a>
       </h3>
-      <AiFillLinkedin size="2em" />
+      <AiFillLinkedin size="1.2em" />
     </ContactContainer>
   );
 }
