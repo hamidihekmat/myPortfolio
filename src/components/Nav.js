@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import ToggleDarkMode from './ToggleDarkMode';
 
-function Nav({ darkMode, projectRef, contactRef }) {
+function Nav({ darkMode, setDarkMode, projectRef, contactRef }) {
   const scrollToProject = () => {
     projectRef.current.scrollIntoView();
   };
@@ -12,38 +13,44 @@ function Nav({ darkMode, projectRef, contactRef }) {
   };
   const downloadResume = () => {
     window.open(
-      'https://raw.githubusercontent.com/hamidihekmat/myPortfolio/main/resume.pdf',
-      '_blank'
+      'https://raw.githubusercontent.com/hamidihekmat/myPortfolio/main/resume.pdf'
     );
   };
   return (
     <StyledNav>
       <Logo onClick={openEmail} darkMode={darkMode}>
-        hamidihekmat@gmail.com
+        hekmat.hamidi
       </Logo>
-      <ul>
-        <li onClick={scrollToProject}>
-          <h3>Projects</h3>
-        </li>
-        <li>
-          <h3 onClick={downloadResume}>Resume</h3>
-        </li>
-        <li onClick={scrollToContact}>
-          <h3>Contacts</h3>
-        </li>
-      </ul>
+      <Flex>
+        <ul>
+          <li onClick={scrollToProject}>
+            <h3>.projects()</h3>
+          </li>
+          <li>
+            <h3 onClick={downloadResume}>.resume()</h3>
+          </li>
+          <li onClick={scrollToContact}>
+            <h3>.contacts()</h3>
+          </li>
+        </ul>
+        <ToggleDarkMode darkMode={darkMode} setDarkMode={setDarkMode} />
+      </Flex>
     </StyledNav>
   );
 }
 
 const StyledNav = styled.nav`
+  color: ${(props) => (props.darkMode ? '#ffffffs' : '#374151k')};
   min-height: 10vh;
-  max-width: 1100px;
+  max-width: 1200px;
   width: 70%;
   margin: 0.5rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  h3 {
+    font-size: 1.2rem;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -52,12 +59,28 @@ const StyledNav = styled.nav`
       cursor: pointer;
     }
   }
+
+  @media (max-width: 530px) {
+    justify-content: space-around;
+    h3 {
+      font-size: 0.8rem;
+    }
+  }
 `;
 
-const Logo = styled.h3`
-  font-family: 'Pacifico', cursive;
-  color: ${(props) => (props.darkMode ? '#d8d7da' : '#374151k')};
+const Logo = styled.h2`
   cursor: pointer;
+  font-size: 2rem;
+`;
+
+const Flex = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @media (max-width: 530px) {
+    width: 100vw;
+    overflow-x: scroll;
+  }
 `;
 
 export default Nav;

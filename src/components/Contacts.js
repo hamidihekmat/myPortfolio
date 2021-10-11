@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Container } from '../styles';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 function Contacts({ contactRef }) {
   const openEmail = () => {
@@ -8,6 +9,7 @@ function Contacts({ contactRef }) {
   return (
     <ContactContainer ref={contactRef}>
       <h3 onClick={openEmail}>hamidihekmat@gmail.com</h3>
+      <AiOutlineMail size="1.2em" />
       <h3>.</h3>
       <h3>
         <a
@@ -18,6 +20,7 @@ function Contacts({ contactRef }) {
           Github
         </a>
       </h3>
+      <AiFillGithub size="1.2em" />
       <h3>.</h3>
       <h3>
         <a
@@ -28,6 +31,7 @@ function Contacts({ contactRef }) {
           LinkedIn
         </a>
       </h3>
+      <AiFillLinkedin size="2em" />
     </ContactContainer>
   );
 }
@@ -35,17 +39,17 @@ function Contacts({ contactRef }) {
 const ContactContainer = styled(Container)`
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 10vh;
   width: 50%;
-  padding: 1rem 2rem;
+  margin: auto;
   a {
     text-decoration: none;
     color: inherit;
   }
   h3 {
-    font-family: 'Pacifico';
     margin: 0 0.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
   }
   @media (max-width: 530px) {

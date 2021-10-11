@@ -5,26 +5,29 @@ import Terminal from './Terminal';
 function Main({ darkMode }) {
   return (
     <MainContainer>
-      <h1>&gt; Hekmat Hamidi</h1>
-      <h3>
-        Hi 👋 I am a web developer. My passion is building beautiful
-        <br />
-        web applications
-      </h3>
+      {/* <h1>&gt; About Me</h1> */}
+      <h1>
+        Hi, I'm Hekmat 👋 <br /> My passion is building beautiful web
+        applications
+      </h1>
       <Terminal darkMode={darkMode} />
     </MainContainer>
   );
 }
 
 const MainContainer = styled(Container)`
+  margin: 3rem auto;
   h1 {
-    margin-top: 2rem;
+    font-size: 50px;
+    color: #3182ce;
     letter-spacing: 4px;
     margin-bottom: 10px;
   }
 
   h3 {
+    margin-top: 2rem;
     padding: 1rem 0rem;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 1122px) {

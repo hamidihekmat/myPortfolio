@@ -3,19 +3,19 @@ import { Container } from '../styles';
 import styled from 'styled-components';
 import { projectDetails } from '../projectDetails';
 
-function Projects({ projectRef }) {
+function Projects({ darkMode, projectRef }) {
   return (
     <StyledProjects ref={projectRef}>
       <h1>&gt; Projects</h1>
       {projectDetails.map((project) => (
-        <Project key={project.id} project={project} />
+        <Project darkMode={darkMode} key={project.id} project={project} />
       ))}
     </StyledProjects>
   );
 }
 
 const StyledProjects = styled(Container)`
-  margin-top: 10rem;
+  margin-top: 5rem;
   h1 {
     letter-spacing: 4px;
     margin-bottom: 10px;

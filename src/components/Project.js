@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 
-function Project({ project }) {
+function Project({ darkMode, project }) {
   return (
     <StyledProject>
       <div className="project-image">
@@ -16,17 +17,29 @@ function Project({ project }) {
         <p>{project.description}</p>
         <div className="tools">
           {project.tools.map((t) => (
-            <Tool key={t.id}>{t.name}</Tool>
+            <Tool darkMode={darkMode} key={t.id}>
+              {t.name}
+            </Tool>
           ))}
         </div>
-        <div className="buttons">
+        <Flex>
           <a target={'_blank'} rel="noreferrer" href={project.live}>
-            Live
+            <Flex>
+              <p>link</p>
+              <AiOutlineLink size="2em" />
+            </Flex>
           </a>
           <a target={'_blank'} rel="noreferrer" href={project.github}>
-            {project.github ? 'Github' : 'Private'}
+            {project.github ? (
+              <Flex>
+                <p>view code</p>
+                <AiFillGithub size="2em" />
+              </Flex>
+            ) : (
+              'Private'
+            )}
           </a>
-        </div>
+        </Flex>
       </div>
     </StyledProject>
   );
@@ -37,13 +50,16 @@ const StyledProject = styled.div`
   overflow: hidden;
   display: flex;
   width: 100%;
+  border: 1px solid #6b7280;
   height: 360px;
-  border-radius: 15px;
-  -moz-box-shadow: 10px 10px 40px
-    ${(props) => (props.darkMode ? '#222831' : 'white')};
-  -webkit-box-shadow: 10px 10px 40px
-    ${(props) => (props.darkMode ? '#222831' : 'white')};
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @media (max-width: 530px) {
+    height: 440px;
+    width: 75vw;
+  }
+
+  p {
+    letter-spacing: 1px;
+  }
   h3 {
     font-weight: bold;
   }
@@ -51,10 +67,11 @@ const StyledProject = styled.div`
   a {
     text-decoration: none;
     color: inherit;
-    border: 1px solid #5a5d7a;
-    padding: 0.5rem 1rem;
     margin: 10px 5px;
-    border-radius: 15px;
+    span {
+      vertical-align: middle;
+      display: inline-block;
+    }
   }
   .project-image {
     overflow: hidden;
@@ -86,16 +103,28 @@ const StyledProject = styled.div`
       width: 100%;
     }
   }
-  @media (max-width: 660px) {
-    height: 440px;
-  }
 `;
 
 const Tool = styled.span`
   display: block;
-  border: 1px solid #d8d7da;
+  border: 2px solid ${(props) => (props.darkMode ? 'white' : 'black')};
+  color: ${(props) => (props.darkMode ? 'white' : 'black')};
+  background: ${(props) => (props.darkMode ? 'black' : 'white')};
   padding: 0.3rem 0.5rem;
   margin: 1.5rem 5px;
+`;
+
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  justify-content: flex-start;
+  svg {
+    padding-left: 3px;
+  }
+  p:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default Project;

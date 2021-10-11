@@ -12,9 +12,9 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: 'Open Sans', sans-serif;
-        background: ${(props) => (props.darkMode ? '#222831' : 'white')};
-        color: ${(props) => (props.darkMode ? '#ffff' : '#374151')};
+        font-family: "Fira Code",monospace;
+        background: ${(props) => (props.darkMode ? '#0D0F11' : 'white')};
+        color: ${(props) => (props.darkMode ? 'white' : 'black')};
         transition: all 500ms ease;
     }
 
@@ -28,7 +28,7 @@ export const GlobalStyles = createGlobalStyle`
 
     h3, h4 {
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 800;
     }
 
     img {

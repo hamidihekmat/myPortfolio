@@ -1,34 +1,36 @@
+import { uuid } from 'uuidv4';
+
 const tools = {
   react: {
-    id: 1,
+    id: uuid(),
     name: 'React',
   },
   recoil: {
-    id: 2,
+    id: uuid(),
     name: 'Recoil',
   },
   framer: {
-    id: 3,
+    id: uuid(),
     name: 'Framer',
   },
   css: {
-    id: 4,
+    id: uuid(),
     name: 'CSS',
   },
   js: {
-    id: 5,
-    name: 'Javascript',
+    id: uuid(),
+    name: 'JS',
   },
   html: {
-    id: 6,
+    id: uuid(),
     name: 'HTML',
   },
   python: {
-    id: 7,
+    id: uuid(),
     name: 'Python',
   },
   mysql: {
-    id: 8,
+    id: uuid(),
     name: 'SQL',
   },
   ffmpeg: {
@@ -36,69 +38,59 @@ const tools = {
     name: 'ffmpeg',
   },
   graphql: {
-    id: 10,
-    name: 'Graphql',
+    id: uuid(),
+    name: 'GQL',
   },
   apollo: {
-    id: 11,
+    id: uuid(),
     name: 'Apollo',
   },
   next: {
-    id: 12,
+    id: uuid(),
     name: 'Nextjs',
   },
 };
 
 export const projectDetails = [
   {
-    id: '1',
+    id: uuid(),
     name: 'Airbnb Clone',
     image: 'https://i.imgur.com/GJeMg8f.png',
     description:
-      'Airbnb clone created with Nextjs & GraphQL. Uses JWT tokens for authenticating users. Users can view listings and also create a new listing. Images are optimized for browsers and mobile. In this project I learned authentication, graphql and how to integrate apollo client with Nextjs.',
+      'Airbnb clone created with Nextjs & GraphQL. Uses JWT tokens for authenticating users.',
     tools: [tools.next, tools.graphql, tools.apollo],
     github: 'https://github.com/hamidihekmat/next-airbnb',
     live: 'https://next-airbnb.vercel.app',
   },
   {
-    id: 2,
+    id: uuid(),
     name: 'Portfolio',
     image: 'https://i.imgur.com/HBCXLSj.png',
     description:
       'My Portfolio! This was created with React. It was built with responsiveness in mind. It also has a dark mode option.',
-    tools: [tools.react, tools.css, tools.framer],
+    tools: [tools.react, tools.css],
     github: 'https://github.com/hamidihekmat/myPortfolio',
     live: '',
   },
   {
-    id: 3,
+    id: uuid(),
     name: 'TikTok Trends Bot',
     image:
       'https://c.files.bbci.co.uk/076D/production/_114310910_tiktok-logo.jpg',
     description:
-      'A bot created with python & ffmpeg to gets trending tiktok videos from private api, compiles the videos, and uploads it to youtube. The bot does everything from creating the title to generating the thumbnail. Contact me for code.',
+      'A bot created with python & ffmpeg to gets trending videos from private api, compiles the videos, and uploads it to youtube.',
     tools: [tools.python, tools.mysql, tools.ffmpeg],
     live: 'https://www.youtube.com/channel/UCCS5kHZWDoEitXB3IPoKS3A/videos',
     github: '',
   },
   {
-    id: 4,
+    id: uuid(),
     name: 'Elegant Shop',
     image: 'https://i.imgur.com/mv7CW3U.png',
     description:
-      'Elegant Shop is your number one source for all things and products. Dedicated to providing you the very best of products, with an emphasis on elegant design, affortable and beautiful. In this project I learned to manipulate the DOM with JS.',
+      'Elegant Shop is a ecommerce site created with pure html, css and javascript.',
     tools: [tools.html, tools.css, tools.js],
     github: 'https://github.com/hamidihekmat/elegantshop',
     live: 'https://elegantshop.netlify.app/',
-  },
-  {
-    id: 5,
-    name: 'Simple Cart',
-    image: 'https://i.imgur.com/S075tfL.png',
-    description:
-      'Simple Cart is a shopping cart app. The purpose for the project was to try and create a shopping cart component and fetch data async within the cart component itself. In this project I learned to move data dynamically between components.',
-    tools: [tools.react, tools.recoil, tools.css],
-    github: 'https://github.com/hamidihekmat/simpleshoppingcart',
-    live: 'https://simpleshoppingcart.vercel.app/',
   },
 ];

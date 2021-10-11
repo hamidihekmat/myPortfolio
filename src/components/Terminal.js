@@ -11,7 +11,7 @@ function Terminal({ darkMode }) {
       <Infos>
         <div className="info">
           <p>&gt; Hekmat.currentLocation</p>
-          <p className="info-ans">"Richmond Hill, ON"</p>
+          <Highlight>"Richmond Hill, ON"</Highlight>
         </div>
         <div className="info">
           <p>&gt; Hekmat.contactInfo</p>
@@ -25,16 +25,16 @@ function Terminal({ darkMode }) {
           <Highlight>"hamidihekmat@gmail.com</Highlight>
         </div>
         <div className="info">
-          <p>&gt; Hekmat.interests</p>
-          <p className="info-ans">
-            ["working out 💪", "watching movies 🍿", "coding 👨‍💻"]
-          </p>
-        </div>
-        <div className="info">
           <p>&gt; Hekmat.skills</p>
           <p className="info-ans">
             ["javascipt", "python", "c++", "mySQL", "mongoDB", "React", "git",
             "Sass", "Node", "Graphql", "Styled Components"]
+          </p>
+        </div>
+        <div className="info">
+          <p>&gt; Hekmat.interests</p>
+          <p className="info-ans">
+            ["working out 💪", "watching movies 🍿", "coding 👨‍💻"]
           </p>
         </div>
         <div className="info">
@@ -46,9 +46,10 @@ function Terminal({ darkMode }) {
 }
 
 const StyledTerminal = styled.div`
-  margin: 1.5rem auto;
+  margin: 4rem auto;
   overflow: hidden;
-  background: #5a5d7a;
+  border: 1px solid #6b7280;
+  background: black;
   width: 100%;
   min-height: 400px;
   position: relative;
@@ -89,7 +90,7 @@ const TopBar = styled.div`
 `;
 
 const Infos = styled.div`
-  color: #d8d7da;
+  color: #ffffff;
   padding: 2.3rem 1.5rem;
   .info {
     padding: 0.5rem 0rem;
@@ -99,7 +100,7 @@ const Infos = styled.div`
     overflow: hidden;
   }
   .info-ans {
-    color: #afa380;
+    color: #3182ce;
   }
 `;
 
