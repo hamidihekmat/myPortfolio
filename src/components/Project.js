@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
+import { projectDetails } from '../projectDetails';
 
 function Project({ darkMode, project }) {
   return (
@@ -14,7 +15,11 @@ function Project({ darkMode, project }) {
       </div>
       <div className="project-content">
         <h3>{project.name}</h3>
-        <p>{project.description}</p>
+        <p>
+          {project.description.length > 124
+            ? project.description.substring(0, 124).trim().concat('...')
+            : project.description}
+        </p>
         <div className="tools">
           {project.tools.map((t) => (
             <Tool darkMode={darkMode} key={t.id}>
@@ -108,8 +113,8 @@ const StyledProject = styled.div`
 const Tool = styled.span`
   display: block;
   border: 1px solid ${(props) => (props.darkMode ? 'white' : 'black')};
-  color: ${(props) => (props.darkMode ? 'white' : 'black')};
-  background: ${(props) => (props.darkMode ? 'black' : 'white')};
+  color: ${(props) => (props.darkMode ? 'black' : 'white')};
+  background: ${(props) => (props.darkMode ? 'white' : 'black')};
   padding: 0.3rem 0.5rem;
   margin: 1.5rem 5px;
 `;
