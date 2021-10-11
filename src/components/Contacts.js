@@ -8,30 +8,29 @@ function Contacts({ contactRef }) {
   };
   return (
     <ContactContainer ref={contactRef}>
-      <h3 onClick={openEmail}>.email()</h3>
-      <AiOutlineMail size="1.2em" />
-      <h3>.</h3>
+      <h3 onClick={openEmail}>
+        .email( <AiOutlineMail /> )
+      </h3>
+
       <h3>
         <a
           target={'_blank'}
           rel="noreferrer"
           href="https://github.com/hamidihekmat"
         >
-          .github()
+          .github( <AiFillGithub /> )
         </a>
       </h3>
-      <AiFillGithub size="1.2em" />
-      <h3>.</h3>
+
       <h3>
         <a
           target={'_blank'}
           rel="noreferrer"
           href="https://www.linkedin.com/in/hekmat-hamidi-53040518a/"
         >
-          .linkedIn()
+          .linkedIn( <AiFillLinkedin /> )
         </a>
       </h3>
-      <AiFillLinkedin size="1.2em" />
     </ContactContainer>
   );
 }
@@ -49,7 +48,7 @@ const ContactContainer = styled(Container)`
   }
   h3 {
     margin: 0 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     cursor: pointer;
   }
   @media (max-width: 530px) {
