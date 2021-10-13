@@ -78,7 +78,7 @@ export const projectDetails = [
     image:
       'https://c.files.bbci.co.uk/076D/production/_114310910_tiktok-logo.jpg',
     description:
-      'A bot created with python & ffmpeg to gets trending videos from private api, compiles the videos, and uploads it to youtube.',
+      'A bot created with python & ffmpeg to get trending videos from private api, compiles the videos, and uploads it to youtube.',
     tools: [tools.python, tools.mysql, tools.ffmpeg],
     live: 'https://www.youtube.com/channel/UCCS5kHZWDoEitXB3IPoKS3A/videos',
     github: '',
