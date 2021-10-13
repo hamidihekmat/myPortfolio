@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
-import { projectDetails } from '../projectDetails';
 
 function Project({ darkMode, project }) {
   return (
