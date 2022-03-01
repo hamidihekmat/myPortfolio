@@ -49,28 +49,27 @@ const tools = {
     id: uuid(),
     name: 'Nextjs',
   },
+  ts: {
+    id: uuid(),
+    name: 'Typescript',
+  },
+  psql: {
+    id: uuid(),
+    name: 'PostgreSQL',
+  },
 };
 
 export const projectDetails = [
   {
     id: uuid(),
-    name: 'Airbnb Clone',
-    image: 'https://i.imgur.com/GJeMg8f.png',
+    name: 'NOS',
+    image:
+      'https://github.com/hamidihekmat/NOS/blob/main/docs/main-ui.png?raw=true',
     description:
-      'Airbnb clone created with Nextjs & GraphQL. Uses JWT tokens for authenticating users.',
-    tools: [tools.next, tools.graphql, tools.apollo],
-    github: 'https://github.com/hamidihekmat/next-airbnb',
-    live: 'https://next-airbnb.vercel.app',
-  },
-  {
-    id: uuid(),
-    name: 'Portfolio',
-    image: 'https://i.imgur.com/HBCXLSj.png',
-    description:
-      'My Portfolio! This was created with React. It was built with responsiveness in mind. It also has a dark mode option.',
-    tools: [tools.react, tools.css],
-    github: 'https://github.com/hamidihekmat/myPortfolio',
-    live: '',
+      'Movies & TV Show web application, designed with Figma, built with Nextjs',
+    tools: [tools.next, tools.ts, tools.psql],
+    github: 'https://github.com/hamidihekmat/NOS',
+    live: 'nos.hekmathamidi.me',
   },
   {
     id: uuid(),
@@ -85,12 +84,12 @@ export const projectDetails = [
   },
   {
     id: uuid(),
-    name: 'Elegant Shop',
-    image: 'https://i.imgur.com/mv7CW3U.png',
+    name: 'Portfolio',
+    image: 'https://i.imgur.com/HBCXLSj.png',
     description:
-      'Elegant Shop is a ecommerce site created with pure html, css and javascript.',
-    tools: [tools.html, tools.css, tools.js],
-    github: 'https://github.com/hamidihekmat/elegantshop',
-    live: 'https://elegantshop.netlify.app/',
+      'My Portfolio! This was created with React. It was built with responsiveness in mind. It also has a dark mode option.',
+    tools: [tools.react, tools.css],
+    github: 'https://github.com/hamidihekmat/myPortfolio',
+    live: '',
   },
 ];
