@@ -69,7 +69,7 @@ export const projectDetails = [
       'Movies & TV Show web application, designed with Figma, built with Nextjs',
     tools: [tools.next, tools.ts, tools.psql],
     github: 'https://github.com/hamidihekmat/NOS',
-    live: 'nos.hekmathamidi.me',
+    live: 'https://nos.hekmathamidi.me',
   },
   {
     id: uuid(),
